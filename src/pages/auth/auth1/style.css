@@ -1,0 +1,39 @@
+.text-criar-conta {
+    text-align: center;
+    font-size: 14px;
+}
+.criar-conta {
+    font-size: 14px;
+    color: #FD7E14;
+    text-decoration: none;
+}
+
+.criar-conta:hover {
+    text-decoration: underline;
+}
+
+.container-grid {
+    max-width: 600px;
+    margin: 30px auto 0; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+}
+
+.grid-details {
+    margin-top: 2px;
+}
+
+.title-code {
+    text-align: center;
+}
+.subTitle-code {
+    margin: 12px 0;
+    text-align: center;
+    font-size:16px;
+}
+
+.img-verification {
+    margin: auto;
+}

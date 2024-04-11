@@ -1,0 +1,23 @@
+.cadastro-declaracao {
+    font-size: 13px;
+}
+
+.link-declaracao {
+    color: #FD7E14;
+    font-size: 13px;
+    margin-left: -10px;
+}
+
+.btn-infoPessoal {
+    margin: auto;
+}
+
+.text-remuneracao  {
+    color: #FD7E14;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.send-code {
+    text-align: center;
+}
