@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 
 // assets
 import AnimateButton from 'components/@extended/AnimateButton';
+import movieUxHub from 'assets/images/landing/uxhub-explicacao.mp4';
 
 // ==============================|| LANDING - HeaderPage ||============================== //
 
@@ -120,9 +121,15 @@ const HeaderPage = () => {
                   </Grid>
                   <Grid item>
                     <AnimateButton>
-                      <Button component={RouterLink} to="/login" target="_blank" size="large" color="secondary"  variant="contained">
+                      {/* <Button component={RouterLink} to="#video-section" size="large" color="secondary"  variant="contained">
                         Saiba mais
-                      </Button>
+                      </Button> */}
+                      <Button onClick={() => {
+    const videoSection = document.getElementById('video-section');
+    videoSection.scrollIntoView({ behavior: "smooth" });
+  }} size="large" color="secondary"  variant="contained">
+    Saiba mais
+</Button>
                     </AnimateButton>
                   </Grid>
                 </Grid>
@@ -130,18 +137,14 @@ const HeaderPage = () => {
               </motion.div>
             </Grid>
           </Grid>
-        </Grid>
-        <Grid className='movie-landing' container justifyContent="center" item xs={12}>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/xDhE-vzFmNg"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </Grid>
+        </Grid><br></br><br></br>
+        <Grid className='movie-landing' id="video-section" container justifyContent="center" item xs={12}>
+  <video width="560" height="400" controls>
+  <track kind="captions" srcLang="pt-br" label="Português" />
+    <source src={movieUxHub} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</Grid>
       </Grid>
     </Container>
   );
