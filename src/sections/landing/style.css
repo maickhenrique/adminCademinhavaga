@@ -7,7 +7,7 @@
 }
 
 .span-carreira {
-  color:  #e58a00;
+  color:  #FD7E14;
 }
 
 .card-container {
@@ -21,7 +21,7 @@
 }
 
 .grid-item-carreira {
-    margin: 30px 0;
+    margin: -10px 0 0 0;
     
     h4{
         margin-bottom: 24px;
@@ -29,6 +29,10 @@
     p {
         font-size: 14px;
     }
+}
+
+.grid-item-description {
+    margin-top: -20px;
 }
 
 .box-acelerar-carreira {
@@ -41,4 +45,12 @@
 
 .card-img {
     max-width: 600px;
+}
+
+.badge {
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    margin: 15px 24px 0 0;
 }

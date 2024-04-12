@@ -12,26 +12,26 @@ import Slider from 'react-slick';
 import './style.css';
 // assets
 import featureChart from 'assets/images/landing/chart.png';
-import featureEcommerce from 'assets/images/landing/chart.png';
-import featureMail from 'assets/images/landing/chart.png';
+import featureProgress from 'assets/images/landing/progress.png';
+import featureJobs from 'assets/images/landing/jobs.png';
 
 const Technologies = [
   {
-    image: featureChart,
+    image: featureProgress,
     title: 'Entenda seu momento de carreira',
-    href: 'chat',
+    href: 'momento',
     description: 'Descubra como está sua carreira, mapeando sua experiência em mais de 130 habilidades relevantes para profissionais de UX.'
   },
   {
-    image: featureEcommerce,
+    image: featureChart,
     title: 'Acelere sua evolução com estratégia',
-    href: 'ecommerce',
+    href: 'evolucao',
     description: 'Utilize métricas de mercado para criar uma estratégia de estudos focadas nas habilidades mais relevantes para o seu momento de carreira.'
   },
   {
-    image: featureMail,
+    image: featureJobs,
     title: 'Consiga a vaga certa para você',
-    href: 'mail',
+    href: 'vagas',
     description: 'Atualize suas habilidades no UX Hub e aumente a chance de conquistar aquela vaga ideal para seu perfil.'
   },
 ];
@@ -110,11 +110,11 @@ const AppsPage = () => {
                               p: 3,
                               borderRadius: 1.5,
                               ...(slideIndex === index && {
-                                background: theme.palette.secondary.dark + 20,
-                                boxShadow: theme.customShadows.z1,
+                                background: '#1D2630',
+                                boxShadow: theme.customShadows.z2,
                                 '&:hover': {
-                                  background: theme.palette.secondary.dark + 20,
-                                  boxShadow: theme.customShadows.z1
+                                  background: '#2A313A',
+                                  boxShadow: theme.customShadows.z2
                                 }
                               })
                             }}

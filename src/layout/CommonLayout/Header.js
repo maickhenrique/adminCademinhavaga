@@ -137,9 +137,9 @@ const Header = ({layout = 'landing', ...others }) => {
                   </Button>
                 )}
 
-<Button variant="outlined" color="warning" component={RouterLink} to="/components-overview/buttons" sx={{ mt: 0.25 }}>
+                <Button variant="outlined" color="warning" component={RouterLink} to="/register" sx={{ mt: 0.25 }}>  
                    Cadastrar
-                  </Button>
+                </Button>
               </Stack>
               <Drawer
                 anchor="top"

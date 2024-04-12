@@ -37,7 +37,7 @@ const HeaderPage = () => {
                   <Box
                     component="span"
                     sx={{
-                       background: 'linear-gradient(90deg, rgb(229, 138, 0), rgb(255, 165, 0), rgb(229, 138, 0)) 0 0 / 400% 100%',
+                       background: '#FD7E14',
                       color: 'transparent',
                       WebkitBackgroundClip: 'text',
                       backgroundClip: 'text',
@@ -55,7 +55,7 @@ const HeaderPage = () => {
                   <Box
                     component="span"
                     sx={{
-                      background: 'linear-gradient(90deg, rgb(229, 138, 0), rgb(255, 165, 0), rgb(229, 138, 0)) 0 0 / 400% 100%',
+                      background: '#FD7E14',
                       color: 'transparent',
                       WebkitBackgroundClip: 'text',
                       backgroundClip: 'text',
@@ -123,11 +123,11 @@ const HeaderPage = () => {
                         Saiba mais
                       </Button> */}
                       <Button onClick={() => {
-    const videoSection = document.getElementById('video-section');
-    videoSection.scrollIntoView({ behavior: "smooth" });
-  }} size="large" color="secondary"  variant="contained">
-    Saiba mais
-</Button>
+                        const videoSection = document.getElementById('video-section');
+                        videoSection.scrollIntoView({ behavior: "smooth" });
+                      }} size="large" color="secondary"  variant="contained">
+                        Saiba mais
+                    </Button>
                     </AnimateButton>
                   </Grid>
                 </Grid>
@@ -137,12 +137,12 @@ const HeaderPage = () => {
           </Grid>
         </Grid><br></br><br></br>
         <Grid className='movie-landing' id="video-section" container justifyContent="center" item xs={12}>
-  <video width="560" height="400" controls>
-  <track kind="captions" srcLang="pt-br" label="Português" />
-    <source src={movieUxHub} type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-</Grid>
+          <video width="560" height="400" controls>
+          <track kind="captions" srcLang="pt-br" label="Português" />
+            <source src={movieUxHub} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </Grid>
       </Grid>
     </Container>
   );
