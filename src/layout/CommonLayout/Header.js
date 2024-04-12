@@ -92,7 +92,7 @@ const Header = ({layout = 'landing', ...others }) => {
                 sx={{ ml: theme.direction === ThemeDirection.RTL ? 3 : 0 }}
                 color="secondary.main"
                 component={RouterLink}
-                to="/login"
+                to="/hub/index.php"
                 target="_blank"
                 underline="none"
               >
@@ -102,7 +102,7 @@ const Header = ({layout = 'landing', ...others }) => {
                 <AnimateButton>
                   <Button
                     component={Link}
-                    href="/register"
+                    href="/hub/index_conta.php"
                     disableElevation
                     color="warning"
                     size="large"
@@ -132,12 +132,12 @@ const Header = ({layout = 'landing', ...others }) => {
                 )}
                 {layout !== 'component' && (
                   
-                  <Button variant="outlined" color="secondary" component={RouterLink} to="/login" sx={{ mt: 0.25 }}>
+                  <Button variant="outlined" color="secondary" component={RouterLink} to="/hub/index.php" sx={{ mt: 0.25 }}>
                    Entrar
                   </Button>
                 )}
 
-                <Button variant="outlined" color="warning" component={RouterLink} to="/register" sx={{ mt: 0.25 }}>  
+                <Button variant="outlined" color="warning" component={RouterLink} to="/hub/index_conta.php" sx={{ mt: 0.25 }}>  
                    Cadastrar
                 </Button>
               </Stack>
@@ -160,7 +160,7 @@ const Header = ({layout = 'landing', ...others }) => {
                   onKeyDown={drawerToggler(false)}
                 >
                   <List>
-                    <Link style={{ textDecoration: 'none' }} href="/login" target="_blank">
+                    <Link style={{ textDecoration: 'none' }} href="/hub/index.php" target="_blank">
                       <ListItemButton component="span">
                         <ListItemIcon>
                           <Minus color={theme.palette.secondary.main} />
@@ -168,7 +168,7 @@ const Header = ({layout = 'landing', ...others }) => {
                         <ListItemText primary="Dashboard" primaryTypographyProps={{ variant: 'h6', color: 'secondary.main' }} />
                       </ListItemButton>
                     </Link>
-                    <Link style={{ textDecoration: 'none' }} href="/components-overview/buttons" target="_blank">
+                    <Link style={{ textDecoration: 'none' }} href="/hub/index_conta.php" target="_blank">
                       <ListItemButton component="span">
                         <ListItemIcon>
                           <Minus color={theme.palette.secondary.main} />

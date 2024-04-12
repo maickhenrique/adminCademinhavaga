@@ -50,7 +50,7 @@ const ComboPage = () => {
           <Grid container spacing={2} justifyContent="center">
             <Grid item>
               <AnimateButton>
-                <Button component={RouterLink} to="/register" size="large" color="warning" variant="contained">
+                <Button component={RouterLink} to="/hub/index_conta.php" size="large" color="warning" variant="contained">
                   Crie sua conta gratuita
                 </Button>
               </AnimateButton>

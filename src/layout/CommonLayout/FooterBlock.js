@@ -84,10 +84,10 @@ const FooterBlock = ({ isFull }) => {
                   <Stack spacing={3}>
                     <Typography variant="h5">Para Você</Typography>
                     <Stack spacing={{ xs: 1.5, md: 2.5 }}>
-                      <FooterLink href="/login" target="_blank" underline="none">
+                      <FooterLink href="/hub/index.php" target="_blank" underline="none">
                         Entrar
                       </FooterLink>
-                      <FooterLink href="/register" target="_blank" underline="none">
+                      <FooterLink href="/hub/index_conta.php" target="_blank" underline="none">
                         Criar conta gratuita
                       </FooterLink>
                     </Stack>
