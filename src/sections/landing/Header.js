@@ -52,7 +52,7 @@ const HeaderPage = () => {
                   >
                     <span>Acelere</span>
                   </Box>
-                  <span> sua jornada em</span>
+                  <span> sua jornada em </span>
                   <Box
                     component="span"
                     sx={{
@@ -68,7 +68,7 @@ const HeaderPage = () => {
                       }
                     }}
                   >
-                    <span>UX</span>
+                    <span> UX</span>
                   </Box>
                 </Typography>
               </motion.div>

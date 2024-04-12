@@ -92,7 +92,7 @@ const TechnologiesPage = () => {
                   delay: 0.4
                 }}
               >
-                <Typography>Confira tudo que p UX Hub tem pra você crescer com estratégia</Typography>
+                <Typography>Confira tudo que o UX Hub tem pra você crescer com estratégia</Typography>
               </motion.div>
             </Grid>
           </Grid>
