@@ -15,7 +15,7 @@ const ComboPage = () => {
     <Box className="box-acelerar-carreira" sx={{ bgcolor: 'secondary.200'}}>
       <Grid container spacing={3} alignItems="center" justifyContent="center" sx={{ mt: { md: 15, xs: 2.5 }, mb: { md: 10, xs: 2.5 } }}>
         <Grid item xs={12}>
-          <Grid container spacing={2} justifyContent="center" sx={{ textAlign: 'center', marginBottom: 3 }} className='grid-container-teste'>
+          <Grid container spacing={2} sx={{ textAlign: 'center', marginBottom: 3 }} className='grid-container-combo'>
             <Grid item xs={12}>
               <motion.div
                 initial={{ opacity: 0, translateY: 550 }}
@@ -27,7 +27,7 @@ const ComboPage = () => {
                   delay: 0.2
                 }}
               >
-                <Typography variant="h2">Quer <span className='span-carreira'>acelerar</span>  sua jornada em UX?</Typography>
+                <Typography variant="h2" className='title-padrao'>Quer <span className='span-carreira'>acelerar</span>  sua jornada em UX?</Typography>
               </motion.div>
             </Grid>
             <Grid item xs={12} md={7}>
@@ -48,14 +48,14 @@ const ComboPage = () => {
             </Grid>
           </Grid>
           <Grid container spacing={2} justifyContent="center">
-                  <Grid item>
-                    <AnimateButton>
-                      <Button component={RouterLink} to="/register" size="large" color="warning" variant="contained">
-                        Crie sua conta gratuita
-                      </Button>
-                    </AnimateButton>
-                  </Grid>
-                  </Grid>
+            <Grid item>
+              <AnimateButton>
+                <Button component={RouterLink} to="/register" size="large" color="warning" variant="contained">
+                  Crie sua conta gratuita
+                </Button>
+              </AnimateButton>
+            </Grid>
+          </Grid>
         </Grid>
       </Grid>
     </Box>

@@ -137,12 +137,14 @@ const AppsPage = () => {
                   ))}
                 </Grid>
               </Grid>
-              <Grid item xs={12} md={6} sx={{ position: 'relative' }}>
+              <Grid item xs={12} md={6} sx={{ position: 'relative' }} className='responsive-img'>
                 <Box
+                  className="box-img"
                   sx={{
                     mt: 4,
                     position: 'absolute',
                     width: '150%'
+                    
                   }}
                 >
                   <Slider ref={sliderRef} {...settings}>

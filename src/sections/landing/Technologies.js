@@ -121,7 +121,7 @@ const TechnologiesPage = () => {
                   delay: 0.2
                 }}
               >
-                <Typography variant="h2">Como aceleramos <span className='span-carreira'>sua carreira</span> </Typography>
+                <Typography variant="h2" className='title-padrao'>Como aceleramos <span className='span-carreira'>sua carreira</span> </Typography>
               </motion.div>
             </Grid>
             <Grid item xs={12}>

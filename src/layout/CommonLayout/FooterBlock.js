@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 
 // project-imports
 import Logo from 'components/logo';
-
+import './style.css';
 // assets
 import LinkedinFooter from './LinkedinFooter';
 import InstagramFooter from './InstagramFooter';
@@ -39,7 +39,7 @@ const FooterBlock = ({ isFull }) => {
 
   return (
     <>
-      <Box sx={{ pt: isFull ? 5 : 10, pb: 10, bgcolor: 'secondary.200', borderTop: `1px solid ${theme.palette.divider}` }}>
+      <Box sx={{ pt: isFull ? 5 : 10, pb: 10, bgcolor: 'secondary.200', borderTop: `1px solid ${theme.palette.divider}` }} className="footer">
         <Container>
           <Grid container spacing={2}>
             <Grid item xs={12} md={4}>

@@ -39,12 +39,34 @@
     height: 332px;
 }
 
-.grid-container-teste {
-    margin: 30px 0;
+.grid-container-combo {
+    margin-top: 30px;
 }
 
 .card-img {
     max-width: 600px;
+}
+
+@media (max-width: 600px) {
+    .box-img {
+        width: 100%; /* Defina a largura como 100% para telas menores */
+        height: auto; /* Garanta que a altura seja ajustada automaticamente */
+    }
+    .card-img {
+        margin-left:-10px;
+    }
+}
+
+/* Estilo para telas maiores que 600px */
+@media (min-width: 601px) {
+    .box-img {
+        max-width: 600px; /* Defina a largura máxima como 600px para telas maiores */
+    }
+
+}
+.box-img {
+    margin-top:-20px;
+
 }
 
 .badge {
@@ -53,4 +75,11 @@
     justify-content: flex-end;
     float: right;
     margin: 15px 24px 0 0;
+}
+
+.text-padrao {
+    color:#fff !important;
+}
+.title-padrao{
+    color:#fff !important;
 }

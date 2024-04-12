@@ -51,7 +51,7 @@ const HeaderPage = () => {
                   >
                     <span>Acelere</span>
                   </Box>
-                  <span> sua jornada em </span>
+                  <span className='text-padrao'> sua jornada em </span>
                   <Box
                     component="span"
                     sx={{
