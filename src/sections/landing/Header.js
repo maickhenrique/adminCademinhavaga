@@ -9,8 +9,6 @@ import { motion } from 'framer-motion';
 import AnimateButton from 'components/@extended/AnimateButton';
 import movieUxHub from 'assets/images/landing/uxhub-explicacao.mp4';
 
-// ==============================|| LANDING - HeaderPage ||============================== //
-
 const HeaderPage = () => {
 
   return (

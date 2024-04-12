@@ -26,11 +26,10 @@ import {
 // project-imports
 import Logo from 'components/logo';
 import { ThemeDirection, APP_DEFAULT_PATH } from 'config';
-import IconButton from 'components/@extended/IconButton';
 import AnimateButton from 'components/@extended/AnimateButton';
 
 // assets
-import {HambergerMenu, Minus } from 'iconsax-react';
+import { Minus } from 'iconsax-react';
 
 // elevation scroll
 function ElevationScroll({ children, window }) {
@@ -49,9 +48,8 @@ function ElevationScroll({ children, window }) {
   });
 }
 
-// ==============================|| COMPONENTS - APP BAR ||============================== //
 
-const Header = ({ handleDrawerOpen, layout = 'landing', ...others }) => {
+const Header = ({layout = 'landing', ...others }) => {
   const theme = useTheme();
   const matchDownMd = useMediaQuery(theme.breakpoints.down('md'));
   const [drawerToggle, setDrawerToggle] = useState(false);
@@ -110,7 +108,7 @@ const Header = ({ handleDrawerOpen, layout = 'landing', ...others }) => {
                     size="large"
                     variant="contained"
                   >
-                    Crie sua conta gratuira
+                    Crie sua conta gratuita
                   </Button>
                 </AnimateButton>
               </Box>
@@ -129,23 +127,19 @@ const Header = ({ handleDrawerOpen, layout = 'landing', ...others }) => {
               <Stack direction="row" spacing={2}>
                 {layout === 'component' && (
                   <Button variant="outlined" color="warning" component={RouterLink} to={APP_DEFAULT_PATH} sx={{ mt: 0.25 }}>
-                    Dashboard
+                    Entrar
                   </Button>
                 )}
                 {layout !== 'component' && (
-                  <Button variant="outlined" color="warning" component={RouterLink} to="/components-overview/buttons" sx={{ mt: 0.25 }}>
-                    All Components
+                  
+                  <Button variant="outlined" color="secondary" component={RouterLink} to="/login" sx={{ mt: 0.25 }}>
+                   Entrar
                   </Button>
                 )}
 
-                <IconButton
-                  size="large"
-                  color="secondary"
-                  {...(layout === 'component' ? { onClick: handleDrawerOpen } : { onClick: drawerToggler(true) })}
-                  sx={{ p: 1 }}
-                >
-                  <HambergerMenu />
-                </IconButton>
+<Button variant="outlined" color="warning" component={RouterLink} to="/components-overview/buttons" sx={{ mt: 0.25 }}>
+                   Cadastrar
+                  </Button>
               </Stack>
               <Drawer
                 anchor="top"
@@ -235,7 +229,6 @@ const Header = ({ handleDrawerOpen, layout = 'landing', ...others }) => {
 };
 
 Header.propTypes = {
-  handleDrawerOpen: PropTypes.func,
   layout: PropTypes.string
 };
 
