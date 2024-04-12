@@ -11,7 +11,8 @@ import { motion } from 'framer-motion';
 import Logo from 'components/logo';
 
 // assets
-import { Facebook } from 'iconsax-react';
+import LinkedinFooter from './LinkedinFooter';
+import InstagramFooter from './InstagramFooter';
 
 // link - custom style
 const FooterLink = styled(Link)(({ theme }) => ({
@@ -57,9 +58,22 @@ const FooterBlock = ({ isFull }) => {
                   </Grid>
                   <Grid item xs={12}>
                     <Typography variant="subtitle1" sx={{ fontWeight: 400 }}>
-                      Phoenixcoded has gained the trust of over 5.5K customers since 2015, thanks to our commitment to delivering
-                      high-quality products. Our experienced team players are responsible for managing Able Pro.
+                      Sua plataforma direcionadora de carreira em UX.
                     </Typography>
+                    <br></br>
+                    <Typography variant="subtitle1" sx={{ fontWeight: 400 }}>
+                      Acompanhe as novidades em:
+                    </Typography>
+                    <Grid container spacing={2} alignItems="center">
+                <Grid item sx={{marginTop: 2}}>
+                  <Link href='https://www.linkedin.com/company/ux-hub/' target="_blank" underline="none" sx={linkSX}>
+                   <LinkedinFooter />
+                  </Link>{' '}&nbsp;
+                  <Link href='https://www.instagram.com/uxhub.br/' target="_blank" underline="none" sx={linkSX}>
+                   <InstagramFooter />
+                  </Link>
+                </Grid>
+              </Grid>
                   </Grid>
                 </Grid>
               </motion.div>
@@ -68,24 +82,18 @@ const FooterBlock = ({ isFull }) => {
               <Grid container spacing={{ xs: 5, md: 2 }}>
                 <Grid item xs={6} sm={4}>
                   <Stack spacing={3}>
-                    <Typography variant="h5">Company</Typography>
+                    <Typography variant="h5">Para Você</Typography>
                     <Stack spacing={{ xs: 1.5, md: 2.5 }}>
-                      <FooterLink href="https://themeforest.net/user/phoenixcoded" target="_blank" underline="none">
-                        Profile
+                      <FooterLink href="/login" target="_blank" underline="none">
+                        Entrar
                       </FooterLink>
-                      <FooterLink href="https://themeforest.net/user/phoenixcoded/portfolio" target="_blank" underline="none">
-                        Portfolio
-                      </FooterLink>
-                      <FooterLink href="https://themeforest.net/user/phoenixcoded/followers" target="_blank" underline="none">
-                        Follow Us
-                      </FooterLink>
-                      <FooterLink href="https://phoenixcoded.net" target="_blank" underline="none">
-                        Website
+                      <FooterLink href="/register" target="_blank" underline="none">
+                        Criar conta gratuita
                       </FooterLink>
                     </Stack>
                   </Stack>
                 </Grid>
-                <Grid item xs={6} sm={4}>
+                {/* <Grid item xs={6} sm={4}>
                   <Stack spacing={3}>
                     <Typography variant="h5">Help & Support</Typography>
                     <Stack spacing={{ xs: 1.5, md: 2.5 }}>
@@ -106,8 +114,8 @@ const FooterBlock = ({ isFull }) => {
                       </FooterLink>
                     </Stack>
                   </Stack>
-                </Grid>
-                <Grid item xs={6} sm={4}>
+                </Grid> */}
+                {/* <Grid item xs={6} sm={4}>
                   <Stack spacing={3}>
                     <Typography variant="h5">Useful Resources</Typography>
                     <Stack spacing={{ xs: 1.5, md: 2.5 }}>
@@ -119,7 +127,7 @@ const FooterBlock = ({ isFull }) => {
                       </FooterLink>
                     </Stack>
                   </Stack>
-                </Grid>
+                </Grid> */}
               </Grid>
             </Grid>
           </Grid>
@@ -136,21 +144,14 @@ const FooterBlock = ({ isFull }) => {
           <Grid container spacing={2} alignItems="center">
             <Grid item xs={12} sm={8}>
               <Typography>
-                © Handcrafted by Team{' '}
-                <Link href="https://themeforest.net/user/phoenixcoded" underline="none">
+                2024 © Feito com muito carinho para você e pela equipe{' '}
+                <Link href="www.uxhub.com.br" underline="none" sx={{ color: theme.palette.warning.main}}>
                   {' '}
-                  Phoenixcoded
+                  UX Hub
                 </Link>
               </Typography>
             </Grid>
             <Grid item xs={12} sm={4}>
-              <Grid container spacing={2} alignItems="center" sx={{ justifyContent: 'flex-end' }}>
-                <Grid item>
-                  <Link underline="none" sx={linkSX}>
-                    <Facebook size="22" variant="Bulk" />
-                  </Link>
-                </Grid>
-              </Grid>
             </Grid>
           </Grid>
         </Container>

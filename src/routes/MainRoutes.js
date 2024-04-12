@@ -52,7 +52,7 @@ const MainRoutes = {
         {
           path: 'coming-soon',
           element: <MaintenanceComingSoon />
-        }
+        },
       ]
     }
   ]

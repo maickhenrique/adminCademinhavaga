@@ -11,7 +11,6 @@ export const MINI_DRAWER_WIDTH = 90;
 export const HEADER_HEIGHT = 74;
 
 export const ThemeMode = {
-  LIGHT: 'light',
   DARK: 'dark'
 };
 
@@ -90,7 +89,7 @@ const config = {
    * 'light' (default)
    * 'dark'
    */
-  mode: ThemeMode.LIGHT,
+  mode: ThemeMode.DARK,
 
   /**
    * the props used for theme primary color variants

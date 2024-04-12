@@ -17,6 +17,8 @@ const AuthCodeVerification = Loadable(lazy(() => import('pages/auth/auth1/code-v
 import PersonalDetails from 'pages/auth/auth1/informacoes-pessoais';
 import ProfessionalInformation from 'pages/auth/auth1/informacao-profissional';
 
+const Landing = Loadable(lazy(() => import('pages/landing')));
+
 // ==============================|| AUTH ROUTES ||============================== //
 
 const LoginRoutes = {
@@ -66,6 +68,10 @@ const LoginRoutes = {
           path: '/informacao-profissional',
           element: <ProfessionalInformation />
         },
+        {
+          path: 'landing',
+          element: <Landing />
+        }
       ]
     }
   ]

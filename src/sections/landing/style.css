@@ -1,0 +1,44 @@
+.movie-landing {
+   margin-top:110px;
+}
+
+.landing-header {
+    margin-top:110px;
+}
+
+.span-carreira {
+  color:  #e58a00;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+.card-carreira {
+    flex: 1 1 300px; 
+    margin: 0 10px 20px; 
+    height: 230px;
+}
+
+.grid-item-carreira {
+    margin: 30px 0;
+    
+    h4{
+        margin-bottom: 24px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+.box-acelerar-carreira {
+    height: 332px;
+}
+
+.grid-container-teste {
+    margin: 30px 0;
+}
+
+.card-img {
+    max-width: 600px;
+}
