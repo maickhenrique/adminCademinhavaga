@@ -41,7 +41,7 @@ const ComboPage = () => {
                   delay: 0.4
                 }}
               >
-                <Typography>
+                <Typography className='desc-combo'>
                  Então crie sua conta gratuita e junte-se a mais de 3 mil profissionais no UX Hub
                 </Typography>
               </motion.div>
