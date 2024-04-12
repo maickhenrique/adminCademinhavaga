@@ -34,7 +34,7 @@ const LoginRoutes = {
       children: [
         {
           path: '/',
-          element: <AuthLogin />
+          element: <Landing />
         },
         {
           path: 'login',
