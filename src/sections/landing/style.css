@@ -10,6 +10,12 @@
   color:  #FD7E14;
 }
 
+@media (min-width: 400px) { 
+    .card-carreira {
+        height: 500px; 
+    }
+}
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -17,7 +23,7 @@
 .card-carreira {
     flex: 1 1 300px; 
     margin: 0 10px 20px; 
-    height: 230px;
+    height: 280px;
 }
 
 .grid-item-carreira {
