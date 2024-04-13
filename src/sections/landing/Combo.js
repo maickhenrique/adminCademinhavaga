@@ -28,19 +28,7 @@ const ComboPage = () => {
                 }}
               >
                 <Typography variant="h2" className='title-padrao'>Quer <span className='span-carreira'>acelerar</span>  sua jornada em UX?</Typography>
-              </motion.div>
-            </Grid>
-            <Grid item xs={12} md={7}>
-              <motion.div
-                initial={{ opacity: 0, translateY: 550 }}
-                animate={{ opacity: 1, translateY: 0 }}
-                transition={{
-                  type: 'spring',
-                  stiffness: 150,
-                  damping: 30,
-                  delay: 0.4
-                }}
-              >
+
                 <Typography className='desc-combo'>
                  Então crie sua conta gratuita e junte-se a mais de 3 mil profissionais no UX Hub
                 </Typography>

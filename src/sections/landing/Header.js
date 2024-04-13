@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 // assets
 import AnimateButton from 'components/@extended/AnimateButton';
-import movieUxHub from 'assets/images/landing/uxhub-explicacao.mp4';
+// import movieUxHub from 'assets/images/landing/uxhub-explicacao.mp4';
 
 const HeaderPage = () => {
 
@@ -136,13 +136,13 @@ const HeaderPage = () => {
             </Grid>
           </Grid>
         </Grid><br></br><br></br>
-        <Grid className='movie-landing' id="video-section" container justifyContent="center" item xs={12}>
+        {/* <Grid className='movie-landing' id="video-section" container justifyContent="center" item xs={12}>
           <video width="560" height="400" controls>
           <track kind="captions" srcLang="pt-br" label="Português" />
             <source src={movieUxHub} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-        </Grid>
+        </Grid> */}
       </Grid>
     </Container>
   );
