@@ -1,6 +1,6 @@
 // material-ui
-import { Box, Button, Grid, Typography } from '@mui/material';
-import { Link as RouterLink } from 'react-router-dom';
+import { Box, Button, Grid, Typography, Link } from '@mui/material';
+// import { Link as RouterLink } from 'react-router-dom';
 // third party
 import { motion } from 'framer-motion';
 
@@ -38,7 +38,7 @@ const ComboPage = () => {
           <Grid container spacing={2} justifyContent="center">
             <Grid item>
               <AnimateButton>
-                <Button component={RouterLink} to="/hub/index_conta.php" size="large" color="warning" variant="contained">
+                <Button component={Link} href="/hub/index_conta.php" size="large" color="warning" variant="contained">
                   Crie sua conta gratuita
                 </Button>
               </AnimateButton>

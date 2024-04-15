@@ -1,6 +1,6 @@
-import { Link as RouterLink } from 'react-router-dom';
+// import { Link as RouterLink } from 'react-router-dom';
 import './style.css';
-import { Box, Button, Container, Grid, Typography } from '@mui/material';
+import { Box, Button, Container, Grid, Typography, Link } from '@mui/material';
 
 // third party
 import { motion } from 'framer-motion';
@@ -112,7 +112,7 @@ const HeaderPage = () => {
                 <Grid container spacing={2} justifyContent="center">
                   <Grid item>
                     <AnimateButton>
-                      <Button component={RouterLink} to="/hub/index_conta.php" size="large" color="warning" variant="contained">
+                      <Button component={Link} href="/hub/index_conta.php" size="large" color="warning" variant="contained">
                         Crie sua conta gratuita
                       </Button>
                     </AnimateButton>
