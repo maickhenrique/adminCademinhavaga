@@ -21,7 +21,7 @@ const ForgotPassword = () => {
             <Typography variant="h3">Forgot Password</Typography>
             <Typography
               component={Link}
-              to={isLoggedIn ? '/auth/login' : '/login'}
+              to={isLoggedIn ? '/auth/entrar' : '/entrar'}
               variant="body1"
               sx={{ textDecoration: 'none' }}
               color="primary"

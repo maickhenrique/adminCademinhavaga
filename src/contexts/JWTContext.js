@@ -81,7 +81,7 @@ export const JWTProvider = ({ children }) => {
   }, []);
 
   const login = async (email, password) => {
-    const response = await axios.post('/api/account/login', { email, password });
+    const response = await axios.post('/api/account/entrar', { email, password });
     const { serviceToken, user } = response.data;
     setSession(serviceToken);
     dispatch({
@@ -97,7 +97,7 @@ export const JWTProvider = ({ children }) => {
     try {
       // Lógica de registro do usuário
       const id = chance.bb_pin();
-      const response = await axios.post('/api/account/register', { id, email, senha });
+      const response = await axios.post('/api/account/cadastrar', { id, email, senha });
       const { user } = response.data;
 
       // Armazenar temporariamente os dados do usuário

@@ -198,13 +198,13 @@ const MegaMenuSection = () => {
                                 </ListSubheader>
                               }
                             >
-                              <ListItemButton disableRipple component={Link} target="_blank" to="/auth/login">
+                              <ListItemButton disableRipple component={Link} target="_blank" to="/auth/entrar">
                                 <ListItemIcon>
                                   <Dot size={6} color="secondary" variant="outlined" />
                                 </ListItemIcon>
                                 <ListItemText primary="Login" />
                               </ListItemButton>
-                              <ListItemButton disableRipple component={Link} target="_blank" to="/auth/register">
+                              <ListItemButton disableRipple component={Link} target="_blank" to="/auth/cadastrar">
                                 <ListItemIcon>
                                   <Dot size={6} color="secondary" variant="outlined" />
                                 </ListItemIcon>

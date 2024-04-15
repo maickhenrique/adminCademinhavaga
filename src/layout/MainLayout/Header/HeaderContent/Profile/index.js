@@ -61,7 +61,7 @@ const ProfilePage = () => {
   const handleLogout = async () => {
     try {
       await logout();
-      navigate(`/login`, {
+      navigate(`/entrar`, {
         state: {
           from: ''
         }
@@ -175,7 +175,7 @@ const ProfilePage = () => {
                           flexDirection: 'row',
                           justifyContent: 'center',
                           alignItems: 'center',
-                          textTransform: 'capitalize'
+                          
                         }}
                         icon={<Profile size={18} style={{ marginBottom: 0, marginRight: '10px' }} />}
                         label="Profile"
@@ -187,7 +187,7 @@ const ProfilePage = () => {
                           flexDirection: 'row',
                           justifyContent: 'center',
                           alignItems: 'center',
-                          textTransform: 'capitalize'
+                          
                         }}
                         icon={<Setting2 size={18} style={{ marginBottom: 0, marginRight: '10px' }} />}
                         label="Setting"

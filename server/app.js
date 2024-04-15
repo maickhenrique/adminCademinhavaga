@@ -40,7 +40,7 @@ connection.connect((err) => {
 });
 
 // Rota para cadastrar um novo usuário
-app.post('/api/account/register', (req, res) => {
+app.post('/api/account/cadastrar', (req, res) => {
   const {email, senha } = req.body;
 
   // Query SQL para inserir um novo usuário no banco de dados

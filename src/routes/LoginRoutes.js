@@ -37,11 +37,11 @@ const LoginRoutes = {
           element: <Landing />
         },
         {
-          path: 'login',
+          path: 'entrar',
           element: <AuthLogin />
         },
         {
-          path: 'register',
+          path: 'cadastrar',
           element: <AuthRegister />
         },
         {
