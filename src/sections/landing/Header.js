@@ -73,32 +73,40 @@ const HeaderPage = () => {
               </motion.div>
             </Grid>
             <Grid container justifyContent="center" item xs={12}>
-              <Grid item xs={8}>
-                <motion.div
-                  initial={{ opacity: 0, translateY: 550 }}
-                  animate={{ opacity: 1, translateY: 0 }}
-                  transition={{
-                    type: 'spring',
-                    stiffness: 150,
-                    damping: 30,
-                    delay: 0.2
-                  }}
-                >
-                  <Typography
-                    variant="h6"
-                    component="div"
-                    sx={{
-                      fontSize: { xs: '0.875rem', md: '1rem' },
-                      fontWeight: 400,
-                      lineHeight: { xs: 1.4, md: 1.4 }
-                    }}
-                  >
-                    Mapeie suas habilidades, acompanhe as tendências do mercado e direcione seus estudos com mais estratégia
-                  </Typography>
-                </motion.div>
-              </Grid>
-            </Grid>
-            <Grid item xs={12}>
+          <Grid item xs={12} md={8}>
+            <motion.div
+              initial={{ opacity: 0, translateY: 550 }}
+              animate={{ opacity: 1, translateY: 0 }}
+              transition={{
+                type: 'spring',
+                stiffness: 150,
+                damping: 30,
+                delay: 0.2
+              }}
+            >
+              <Typography
+                className='text-hero'
+                variant="h6"
+                component="div"
+                sx={{
+                  fontSize: { xs: '1rem', md: '1rem' },
+                  marginBottom: '20px',
+                  fontWeight: 400,
+                  lineHeight: { xs: 1.5, md: 1.4 },
+                  textAlign: 'justify', // Adicionado para justificar o texto
+                  maxWidth: '100%', // Adicionado para ocupar toda a largura da tela
+                  paddingLeft: '10px', // Adicionado para adicionar um espaço à esquerda
+                  paddingRight: '10px', // Adicionado para adicionar um espaço à direita
+                  boxSizing: 'border-box' // Adicionado para garantir que o padding não aumente a largura total
+                }}
+              >
+                Mapeie suas habilidades, acompanhe as tendências do mercado e direcione seus estudos com mais estratégia
+              </Typography>
+            </motion.div>
+          </Grid>
+          </Grid>
+
+            <Grid item xs={12} >
               <motion.div
                 initial={{ opacity: 0, translateY: 550 }}
                 animate={{ opacity: 1, translateY: 0 }}
@@ -109,10 +117,10 @@ const HeaderPage = () => {
                   delay: 0.4
                 }}
               >
-                <Grid container spacing={2} justifyContent="center">
+                <Grid container spacing={2} justifyContent="center" >
                   <Grid item>
                     <AnimateButton>
-                      <Button component={Link} href="/hub/index_conta.php" size="large" color="warning" variant="contained">
+                      <Button className='btn-hero' component={Link} href="/hub/index_conta.php" size="large" color="warning" variant="contained">
                         Crie sua conta gratuita
                       </Button>
                     </AnimateButton>
@@ -125,17 +133,16 @@ const HeaderPage = () => {
                       <Button onClick={() => {
                         const videoSection = document.getElementById('video-section');
                         videoSection.scrollIntoView({ behavior: "smooth" });
-                      }} size="large" color="secondary"  variant="contained">
+                      }} size="large" color="secondary"  variant="contained" className='btn-hero'>
                         Saiba mais
                     </Button>
                     </AnimateButton>
                   </Grid>
                 </Grid>
-                
               </motion.div>
             </Grid>
           </Grid>
-        </Grid><br></br><br></br>
+        </Grid>
         {/* <Grid className='movie-landing' id="video-section" container justifyContent="center" item xs={12}>
           <video width="560" height="400" controls>
           <track kind="captions" srcLang="pt-br" label="Português" />

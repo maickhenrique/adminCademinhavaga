@@ -47,10 +47,15 @@ const AuthRegister = () => {
   const [checked, setChecked] = useState(false);
   const [level, setLevel] = useState();
   const [showPassword, setShowPassword] = useState(false);
+  const [confirmShowPassword, setConfirmShowPassword] = useState(false);
 
   const handleClickShowPassword = () => {
     setShowPassword(!showPassword);
   };
+
+  const handleClickConfirmShowPassword = () => {
+    setConfirmShowPassword(!confirmShowPassword);
+  }
 
   const handleMouseDownPassword = (event) => {
     event.preventDefault();
@@ -145,7 +150,7 @@ const AuthRegister = () => {
                     fullWidth
                     error={Boolean(touched.senha && errors.senha)}
                     id="password-signup"
-                    type={showPassword ? 'text' : 'senha'}
+                    type={showPassword ? 'text' : 'password'}
                     value={values.senha}
                     name="senha"
                     onBlur={handleBlur}
@@ -197,7 +202,7 @@ const AuthRegister = () => {
                     fullWidth
                     error={Boolean(touched.confirmPassword && errors.confirmPassword)}
                     id="password-signup"
-                    type={showPassword ? 'text' : 'senha'}
+                    type={confirmShowPassword ? 'text' : 'password'}
                     value={values.confirmPassword}
                     name="confirmPassword"
                     onBlur={handleBlur}
@@ -209,12 +214,12 @@ const AuthRegister = () => {
                       <InputAdornment position="end">
                         <IconButton
                           aria-label="toggle password visibility"
-                          onClick={handleClickShowPassword}
+                          onClick={handleClickConfirmShowPassword}
                           onMouseDown={handleMouseDownPassword}
                           edge="end"
                           color="secondary"
                         >
-                          {showPassword ? <Eye /> : <EyeSlash />}
+                          {confirmShowPassword ? <Eye /> : <EyeSlash />}
                         </IconButton>
                       </InputAdornment>
                     }
@@ -246,9 +251,9 @@ const AuthRegister = () => {
                     <Typography className='link-declaracao' component={RouterLink} to="#">
                       Termos de Uso e Serviço
                     </Typography>&nbsp;
-                    <Typography variant="body1">e </Typography>
+                    <Typography variant="body1">e </Typography> &nbsp;&nbsp;
                     <Typography className='link-declaracao' component={RouterLink} to="#">
-                      Políticas de Privacidade
+                     &nbsp; Políticas de Privacidade
                     </Typography>
                   </Grid>
               </Grid>

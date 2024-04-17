@@ -1,11 +1,21 @@
-.movie-landing {
+/* .movie-landing {
    margin-top:200px;
-}
+} */
 
 .landing-header {
-    margin-top:200px;
+    margin-top:100px;
+    margin-bottom: 100px;
 }
 
+@media (max-width: 600px) {
+    .landing-header {
+        margin-top: -100px;
+    }
+}
+
+.container-tech {
+    margin-top: -250px;
+}
 .span-carreira {
   color:  #FD7E14;
 }
@@ -94,3 +104,16 @@
     text-align: center !important;
     margin: 25px 0 20px 0;
 }
+
+@media (max-width: 600px) {
+    .desc-combo {
+        margin: 25px 20px 20px 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .btn-hero {
+        width: 300px;
+        font-size: 20px;
+    }
+  }

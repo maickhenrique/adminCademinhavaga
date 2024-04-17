@@ -58,7 +58,6 @@ const svgHubVagas = `<svg width="40" height="40" viewBox="0 0 40 40" fill="none"
   </svg>
 `;
 
-
 import './style.css';
 const Technologies = [
   {
@@ -106,7 +105,7 @@ const Technologies = [
 
 const TechnologiesPage = () => {
   return (
-    <Container>
+    <Container className='container-tech'>
       <Grid container spacing={3} alignItems="center" justifyContent="center" sx={{ mt: { md: 15, xs: 2.5 }, mb: { md: 10, xs: 2.5 } }}>
         <Grid item xs={12}>
           <Grid container spacing={2} sx={{ textAlign: 'center', marginBottom: 3 }}>

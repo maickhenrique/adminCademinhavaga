@@ -1,0 +1,28 @@
+.text-label {
+    margin-right: 20px;
+}
+
+.box-comparativo {
+    background-color: #1D2630;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+}
+
+.text-comparativo {
+    text-align: center;
+    font-size: 11px;
+    margin: 3px 7px 0 0;
+}
+
+.text-meta {
+    text-align: center; 
+}
+
+.grid-comparativo {
+    margin-top: -50px;
+}

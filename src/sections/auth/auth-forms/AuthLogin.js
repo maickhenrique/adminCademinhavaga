@@ -51,17 +51,17 @@ const AuthLogin = ({ forgot }) => {
     <>
       <Formik
         initialValues={{
-          email: '',
-          password: '',
+          email: 'teste@uxhub.com.br',
+          senha: '123456',
           submit: null
         }}
         validationSchema={Yup.object().shape({
           email: Yup.string().email('Must be a valid email').max(255).required('Campo obrigatório'),
-          password: Yup.string().max(255).required('Campo obrigatório')
+          senha: Yup.string().max(255).required('Campo obrigatório')
         })}
         onSubmit={async (values, { setErrors, setStatus, setSubmitting }) => {
           try {
-            await login(values.email, values.password);
+            await login(values.email, values.senha);
             if (scriptedRef.current) {
               setStatus({ success: true });
               setSubmitting(false);
@@ -105,11 +105,11 @@ const AuthLogin = ({ forgot }) => {
                   <InputLabel htmlFor="password-login">Senha</InputLabel>
                   <OutlinedInput
                     fullWidth
-                    error={Boolean(touched.password && errors.password)}
+                    error={Boolean(touched.senha && errors.senha)}
                     id="-password-login"
-                    type={showPassword ? 'text' : 'password'}
-                    value={values.password}
-                    name="password"
+                    type={showPassword ? 'text' : 'senha'}
+                    value={values.senha}
+                    name="senha"
                     onBlur={handleBlur}
                     onChange={handleChange}
                     endAdornment={
@@ -127,9 +127,9 @@ const AuthLogin = ({ forgot }) => {
                     }
                     placeholder="Digite sua senha"
                   />
-                  {touched.password && errors.password && (
+                  {touched.senha && errors.senha && (
                     <FormHelperText error id="standard-weight-helper-text-password-login">
-                      {errors.password}
+                      {errors.senha}
                     </FormHelperText>
                   )}
                 </Stack>

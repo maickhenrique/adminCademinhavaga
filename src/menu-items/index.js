@@ -1,10 +1,7 @@
-// project-imports
-import support from './support';
-
-// ==============================|| MENU ITEMS ||============================== //
+import menu from './menu';
 
 const menuItems = {
-  items: [support]
+  items: [menu]
 };
 
 export default menuItems;

@@ -28,7 +28,7 @@ const CheckMail = () => {
           <AnimateButton>
             <Button
               component={Link}
-              to={isLoggedIn ? '/auth/login' : '/login'}
+              to={isLoggedIn ? '/auth/entrar' : '/entrar'}
               disableElevation
               fullWidth
               size="large"

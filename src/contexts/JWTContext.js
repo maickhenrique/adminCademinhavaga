@@ -80,17 +80,29 @@ export const JWTProvider = ({ children }) => {
     init();
   }, []);
 
-  const login = async (email, password) => {
-    const response = await axios.post('/api/account/entrar', { email, password });
-    const { serviceToken, user } = response.data;
-    setSession(serviceToken);
-    dispatch({
-      type: LOGIN,
-      payload: {
-        isLoggedIn: true,
-        user
-      }
-    });
+  // const login = async (email, senha) => {
+  //   const response = await axios.post('/api/account/entrar', { email, senha });
+  //   const { serviceToken, user } = response.data;
+  //   setSession(serviceToken);
+  //   dispatch({
+  //     type: LOGIN,
+  //     payload: {
+  //       isLoggedIn: true,
+  //       user
+  //     }
+  //   });
+  // };
+
+  const login = async (email, senha) => {
+    try {
+      const response = await axios.post('/api/account/entrar', { email, senha });
+      const { serviceToken, user } = response.data;
+      setSession(serviceToken);
+      setUser(user);
+      setIsLoggedIn(true);
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   const register = async (email, senha) => {

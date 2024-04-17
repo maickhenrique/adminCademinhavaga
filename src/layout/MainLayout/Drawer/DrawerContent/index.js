@@ -2,7 +2,6 @@
 import { useMediaQuery, useTheme } from '@mui/material';
 
 // project-imports
-import NavCard from './NavCard';
 import Navigation from './Navigation';
 import SimpleBar from 'components/third-party/SimpleBar';
 import { useSelector } from 'store';
@@ -26,7 +25,7 @@ const DrawerContent = () => {
     >
       <>
         <Navigation />
-        {drawerOpen && !matchDownMD && <NavCard />}
+        {drawerOpen && !matchDownMD}
       </>
     </SimpleBar>
   );
