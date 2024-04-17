@@ -91,8 +91,8 @@ const Header = ({layout = 'landing', ...others }) => {
                 className="header-link"
                 sx={{ ml: theme.direction === ThemeDirection.RTL ? 3 : 0 }}
                 color="secondary.main"
-                component={RouterLink}
-                to="/hub/index.php"
+                component={Link}
+                href="/hub/index.php"
                 target="_blank"
                 underline="none"
               >
@@ -132,12 +132,12 @@ const Header = ({layout = 'landing', ...others }) => {
                 )}
                 {layout !== 'component' && (
                   
-                  <Button variant="outlined" color="secondary" component={RouterLink} to="/hub/index.php" sx={{ mt: 0.25 }}>
+                  <Button variant="outlined" color="secondary" component={Link} href="/hub/index.php" sx={{ mt: 0.25 }}>
                    Entrar
                   </Button>
                 )}
 
-                <Button variant="outlined" color="warning" component={RouterLink} to="/hub/index_conta.php" sx={{ mt: 0.25 }}>  
+                <Button variant="outlined" color="warning" component={Link} href="/hub/index_conta.php" sx={{ mt: 0.25 }}>  
                    Cadastrar
                 </Button>
               </Stack>
