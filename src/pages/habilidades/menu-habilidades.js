@@ -51,8 +51,11 @@ export default function MenuHabilidade({ activeTab }) {
         <Typography sx={{ alignSelf: 'flex-end', marginBottom: 1 }}>Pontos de Experiência: <span>234 pts</span></Typography>
       </Box>
       
-      <TabPanel value={value} index={1}>
+      <TabPanel value={value} index={0}>
         <PontosDeExperiencia />
+        <MinhasSubHabilidades />
+        {/* <MinhasSubHabilidades />
+        <MeuGrafico /> */}
         {/* <MeuGrafico /> */}
       </TabPanel>
       <TabPanel value={value} index={0}>

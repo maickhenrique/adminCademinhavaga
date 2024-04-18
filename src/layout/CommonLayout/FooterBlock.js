@@ -54,7 +54,7 @@ const FooterBlock = ({ isFull }) => {
               >
                 <Grid container spacing={2}>
                   <Grid item xs={12}>
-                    <Logo reverse to="/" />
+                  <Logo reverse  />
                   </Grid>
                   <Grid item xs={12}>
                     <Typography variant="subtitle1" sx={{ fontWeight: 400 }}>
@@ -66,10 +66,10 @@ const FooterBlock = ({ isFull }) => {
                     </Typography>
                     <Grid container spacing={2} alignItems="center">
                 <Grid item sx={{marginTop: 2}}>
-                  <Link href='https://www.linkedin.com/company/ux-hub/' target="_blank" underline="none" sx={linkSX}>
+                  <Link href='https://www.linkedin.com/company/ux-hub/' target="_blank" underline="none" sx={linkSX} tabindex="0">
                    <LinkedinFooter />
                   </Link>{' '}&nbsp;
-                  <Link href='https://www.instagram.com/uxhub.br/' target="_blank" underline="none" sx={linkSX}>
+                  <Link href='https://www.instagram.com/uxhub.br/' target="_blank" underline="none" sx={linkSX} tabindex="0">
                    <InstagramFooter />
                   </Link>
                 </Grid>
@@ -84,10 +84,10 @@ const FooterBlock = ({ isFull }) => {
                   <Stack spacing={3}>
                     <Typography variant="h5">Para Você</Typography>
                     <Stack spacing={{ xs: 1.5, md: 2.5 }}>
-                      <FooterLink href="/hub/index.php" target="_blank" underline="none">
+                      <FooterLink href="/hub/index.php" target="_blank" underline="none" tabindex="0">
                         Entrar
                       </FooterLink>
-                      <FooterLink href="/hub/index_conta.php" target="_blank" underline="none">
+                      <FooterLink href="/hub/index_conta.php" target="_blank" underline="none" tabindex="0">
                         Criar conta gratuita
                       </FooterLink>
                     </Stack>
@@ -145,7 +145,7 @@ const FooterBlock = ({ isFull }) => {
             <Grid item xs={12} sm={8}>
               <Typography>
                 2024 © Feito com muito carinho para você e pela equipe{' '}
-                <Link href="www.uxhub.com.br" underline="none" sx={{ color: theme.palette.warning.main}}>
+                <Link href="www.uxhub.com.br" underline="none" sx={{ color: theme.palette.warning.main}} tabindex="0">
                   {' '}
                   UX Hub
                 </Link>

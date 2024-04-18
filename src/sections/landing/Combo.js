@@ -38,7 +38,7 @@ const ComboPage = () => {
           <Grid container spacing={2} justifyContent="center">
             <Grid item>
               <AnimateButton>
-                <Button component={Link} href="/hub/index_conta.php" size="large" color="warning" variant="contained">
+                <Button component={Link} href="/hub/index_conta.php" size="large" color="warning" variant="contained" tabindex="0">
                   Crie sua conta gratuita
                 </Button>
               </AnimateButton>

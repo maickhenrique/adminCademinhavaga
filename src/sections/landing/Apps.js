@@ -150,7 +150,7 @@ const AppsPage = () => {
                   <Slider ref={sliderRef} {...settings}>
                     {Technologies.map((tech, index) => (
                       <Box key={index + state} sx={{ width: '100%', minHeight: '100%', textAlign: 'center' }}>
-                        <CardMedia component="img" image={tech.image} className='card-img'/>
+                        <CardMedia component="img" image={tech.image} className='card-img' alt={tech.description} />
                       </Box>
                     ))}
                   </Slider>

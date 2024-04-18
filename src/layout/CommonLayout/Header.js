@@ -76,7 +76,7 @@ const Header = ({layout = 'landing', ...others }) => {
           <Toolbar sx={{ px: { xs: 1.5, sm: 4, md: 0, lg: 0 }, py: 1 }}>
             <Stack direction="row" sx={{ flexGrow: 1, display: { xs: 'none', md: 'block' } }} alignItems="center">
               <Typography component="div" sx={{ textAlign: 'left', display: 'inline-block' }}>
-                <Logo reverse to="/" />
+                <Logo reverse tabindex="0"/>
               </Typography>
             </Stack>
             <Stack
@@ -95,6 +95,7 @@ const Header = ({layout = 'landing', ...others }) => {
                 href="/hub/index.php"
                 target="_blank"
                 underline="none"
+                tabindex="0"
               >
                 Entrar
               </Link>
@@ -107,6 +108,7 @@ const Header = ({layout = 'landing', ...others }) => {
                     color="warning"
                     size="large"
                     variant="contained"
+                    tabindex="0"
                   >
                     Crie sua conta gratuita
                   </Button>
@@ -122,22 +124,22 @@ const Header = ({layout = 'landing', ...others }) => {
               }}
             >
               <Typography component="div" sx={{ textAlign: 'left', display: 'inline-block' }}>
-                <Logo reverse to="/" />
+                <Logo reverse/>
               </Typography>
               <Stack direction="row" spacing={2}>
                 {layout === 'component' && (
-                  <Button variant="outlined" color="warning" component={RouterLink} to={APP_DEFAULT_PATH} sx={{ mt: 0.25 }}>
+                  <Button variant="outlined" color="warning" component={RouterLink} to={APP_DEFAULT_PATH} sx={{ mt: 0.25 }} tabindex="0">
                     Entrar
                   </Button>
                 )}
                 {layout !== 'component' && (
                   
-                  <Button variant="outlined" color="secondary" component={Link} href="/hub/index.php" sx={{ mt: 0.25 }}>
+                  <Button variant="outlined" color="secondary" component={Link} href="/hub/index.php" sx={{ mt: 0.25 }} tabindex="0">
                    Entrar
                   </Button>
                 )}
 
-                <Button variant="outlined" color="warning" component={Link} href="/hub/index_conta.php" sx={{ mt: 0.25 }}>  
+                <Button variant="outlined" color="warning" component={Link} href="/hub/index_conta.php" sx={{ mt: 0.25 }} tabindex="0">  
                    Cadastrar
                 </Button>
               </Stack>
@@ -160,7 +162,7 @@ const Header = ({layout = 'landing', ...others }) => {
                   onKeyDown={drawerToggler(false)}
                 >
                   <List>
-                    <Link style={{ textDecoration: 'none' }} href="/hub/index.php" target="_blank">
+                    <Link style={{ textDecoration: 'none' }} href="/hub/index.php" target="_blank" tabindex="0">
                       <ListItemButton component="span">
                         <ListItemIcon>
                           <Minus color={theme.palette.secondary.main} />
@@ -168,7 +170,7 @@ const Header = ({layout = 'landing', ...others }) => {
                         <ListItemText primary="Dashboard" primaryTypographyProps={{ variant: 'h6', color: 'secondary.main' }} />
                       </ListItemButton>
                     </Link>
-                    <Link style={{ textDecoration: 'none' }} href="/hub/index_conta.php" target="_blank">
+                    <Link style={{ textDecoration: 'none' }} href="/hub/index_conta.php" target="_blank" tabindex="0">
                       <ListItemButton component="span">
                         <ListItemIcon>
                           <Minus color={theme.palette.secondary.main} />
@@ -180,6 +182,7 @@ const Header = ({layout = 'landing', ...others }) => {
                       style={{ textDecoration: 'none' }}
                       href="https://github.com/phoenixcoded/able-pro-free-admin-dashboard-template"
                       target="_blank"
+                      tabindex="0"
                     >
                       <ListItemButton component="span">
                         <ListItemIcon>
@@ -188,7 +191,7 @@ const Header = ({layout = 'landing', ...others }) => {
                         <ListItemText primary="Free Version" primaryTypographyProps={{ variant: 'h6', color: 'secondary.main' }} />
                       </ListItemButton>
                     </Link>
-                    <Link style={{ textDecoration: 'none' }} href="https://phoenixcoded.gitbook.io/able-pro/v/react/" target="_blank">
+                    <Link style={{ textDecoration: 'none' }} href="https://phoenixcoded.gitbook.io/able-pro/v/react/" target="_blank" tabindex="0">
                       <ListItemButton component="span">
                         <ListItemIcon>
                           <Minus color={theme.palette.secondary.main} />
@@ -196,7 +199,7 @@ const Header = ({layout = 'landing', ...others }) => {
                         <ListItemText primary="Documentation" primaryTypographyProps={{ variant: 'h6', color: 'secondary.main' }} />
                       </ListItemButton>
                     </Link>
-                    <Link style={{ textDecoration: 'none' }} href="https://phoenixcoded.authordesk.app/" target="_blank">
+                    <Link style={{ textDecoration: 'none' }} href="https://phoenixcoded.authordesk.app/" target="_blank" tabindex="0">
                       <ListItemButton component="span">
                         <ListItemIcon>
                           <Minus color={theme.palette.secondary.main} />
@@ -208,6 +211,7 @@ const Header = ({layout = 'landing', ...others }) => {
                       style={{ textDecoration: 'none' }}
                       href="https://1.envato.market/c/1289604/275988/4415?subId1=phoenixcoded&u=https%3A%2F%2Fthemeforest.net%2Fitem%2Fable-pro-responsive-bootstrap-4-admin-template%2F19300403"
                       target="_blank"
+                      tabindex="0"
                     >
                       <ListItemButton component="span">
                         <ListItemIcon>

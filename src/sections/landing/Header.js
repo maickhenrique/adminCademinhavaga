@@ -88,17 +88,6 @@ const HeaderPage = () => {
                 className='text-hero'
                 variant="h6"
                 component="div"
-                sx={{
-                  fontSize: { xs: '1rem', md: '1rem' },
-                  marginBottom: '20px',
-                  fontWeight: 400,
-                  lineHeight: { xs: 1.5, md: 1.4 },
-                  textAlign: 'justify', // Adicionado para justificar o texto
-                  maxWidth: '100%', // Adicionado para ocupar toda a largura da tela
-                  paddingLeft: '10px', // Adicionado para adicionar um espaço à esquerda
-                  paddingRight: '10px', // Adicionado para adicionar um espaço à direita
-                  boxSizing: 'border-box' // Adicionado para garantir que o padding não aumente a largura total
-                }}
               >
                 Mapeie suas habilidades, acompanhe as tendências do mercado e direcione seus estudos com mais estratégia
               </Typography>
@@ -120,7 +109,7 @@ const HeaderPage = () => {
                 <Grid container spacing={2} justifyContent="center" >
                   <Grid item>
                     <AnimateButton>
-                      <Button className='btn-hero' component={Link} href="/hub/index_conta.php" size="large" color="warning" variant="contained">
+                      <Button className='btn-hero' component={Link} href="/hub/index_conta.php" size="large" color="warning" variant="contained" tabindex="0">
                         Crie sua conta gratuita
                       </Button>
                     </AnimateButton>
@@ -133,7 +122,7 @@ const HeaderPage = () => {
                       <Button onClick={() => {
                         const videoSection = document.getElementById('video-section');
                         videoSection.scrollIntoView({ behavior: "smooth" });
-                      }} size="large" color="secondary"  variant="contained" className='btn-hero'>
+                      }} size="large" color="info"  variant="outlined" className='btn-hero' tabindex="0">
                         Saiba mais
                     </Button>
                     </AnimateButton>
